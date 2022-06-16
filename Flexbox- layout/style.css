@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 15px;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: var(--background-headings-buttons);
+  padding: 0 2rem;
+  font-size: 2.2rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--paragraphs);
+  padding: 1rem 2rem;
+}
+
+img {
+  padding: 2.5rem 2rem;
+}
+
+.main {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 18.75rem 18.75rem 18.75rem;
+  margin-top: 5rem;
+  padding-top: 2rem;
+}
+
+.div {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 24rem;
+}
+
+.first-tab {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 3% 0 0 3%;
+}
+
+.second-tab {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.third-tab {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 3% 3% 0;
+}
+
+.button {
+  background-color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  margin: 2rem;
+  border: none;
+}
+
+@media (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-tab {
+    max-width: 20rem;
+  }
+
+  .second-tab {
+    border-radius: 5% 5% 0 0;
+  }
+
+  .third-tab {
+    border-radius: 0 0 5% 5%;
+  }
+}
